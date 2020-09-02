@@ -5,11 +5,6 @@ VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PQS.FSChallenge", "PQS.FSChalenge2\PQS.FSChallenge.csproj", "{0FE70344-76F3-4907-AD5C-6A2EFA5BD74C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "db", "db", "{0830C22E-768E-40D3-8406-1F0B029860EA}"
-	ProjectSection(SolutionItems) = preProject
-		..\PQS.FSChallenge.db.sql = ..\PQS.FSChallenge.db.sql
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
