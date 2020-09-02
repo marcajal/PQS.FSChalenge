@@ -21,13 +21,6 @@ namespace PQS.FSChalenge2.Controllers
             _context = context;
         }
 
-        ////GET: api/OrdersItems
-        //[HttpGet]
-        //public IEnumerable<OrdersItemsDTO> GetOrdersItems()
-        //{
-        //    return Mapper.Map<IEnumerable<OrdersItemsDTO>>(_context.OrdersItems);
-        //}
-
         //GET: api/OrdersItems/OrderId/1
         [HttpGet("OrderId/{orderId}")]
         public IEnumerable<OrdersItemsDTO> GetOrdersItems([FromRoute] int orderId)

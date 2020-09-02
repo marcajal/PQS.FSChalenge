@@ -28,7 +28,6 @@ namespace PQS.FSChalenge2
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
@@ -37,17 +36,12 @@ namespace PQS.FSChalenge2
 
             services.AddSwaggerGen((option) =>
                 {
-                    //option.SwaggerDoc("v1", new Info { title = "API PQS.FSChallenge", version = "v1" });
                     option.SwaggerDoc("v1", new OpenApiInfo { Title = "API PQS.FSChallenge", Version = "v1" });
                 }
 
             );
-            //services.AddControllers().AddNewtonsoftJson();
 
-            //services.AddControllers().AddNewtonsoftJson(options =>
-            //{
-            //    options.SerializerSettings.ContractResolver = new DefaultContractResolver();
-            //});
+            //services.AddControllers().AddNewtonsoftJson();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -19,14 +19,6 @@ namespace PQS.FSChalenge2.Models
         public virtual DbSet<OrdersItems> OrdersItems { get; set; }
         public virtual DbSet<VOrdersInfo> VOrdersInfo { get; set; }
 
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    if (!optionsBuilder.IsConfigured)
-        //    {
-        //    #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-        //        optionsBuilder.UseSqlServer("Server=.\\SQLExpress;Database=PQS.FSChalenge.db;Trusted_Connection=True;");
-        //    }
-        //}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
