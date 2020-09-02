@@ -23,19 +23,19 @@ namespace PQS.FSChalenge2.DTOs
         }
 
     
-        private void AddOrUpdateOrdersItems(OrdersDTO dto, Orders country)
-        {
-            foreach (var oItems in dto.OrdersItems)
-            {
-                if (oItems.OrderId == 0)
-                {
-                    country.OrdersItems.Add(Mapper.Map<OrdersItems>(oItems));
-                }
-                else
-                {
-                    Mapper.Map(oItems, country.OrdersItems.SingleOrDefault(c => c.OrderId == oItems.OrderId));
-                }
-            }
-        }
+        //private void AddOrUpdateOrdersItems(OrdersDTO dto, Orders country)
+        //{
+        //    foreach (var oItems in dto.OrdersItems)
+        //    {
+        //        if (oItems.OrderId == 0)
+        //        {
+        //            country.OrdersItems.Add(Mapper.Map<OrdersItems>(oItems));
+        //        }
+        //        else
+        //        {
+        //            Mapper.Map(oItems, country.OrdersItems.SingleOrDefault(c => c.OrderId == oItems.OrderId));
+        //        }
+        //    }
+        //}
     }
 }
